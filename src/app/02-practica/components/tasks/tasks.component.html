@@ -1,0 +1,13 @@
+
+<h4>Tareas</h4>
+
+<ul class="list-group">
+  <li *ngFor="let tarea of tareas;
+              let i = index;"
+  class="list-group-item d-flex justify-content-between align-items-center">
+  {{tarea.id}} : {{tarea.nombre}} | {{tarea.completado}}
+
+
+<button (click)="removeTask(i)" class="btn btn-danger"> X </button>
+</li>
+</ul>

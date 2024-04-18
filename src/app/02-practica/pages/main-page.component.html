@@ -1,0 +1,21 @@
+<h1>Lista de Tareas</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <app-tasks [tareas]="taskService.tareas"
+                (onRemove)="taskService.removeTask($event)" ></app-tasks>
+  </div>
+
+
+  <div class="col">
+
+    <app-add-task (newTask)="taskService.newTask($event)" ></app-add-task>
+
+  </div>
+
+</div>
+
+
+
+

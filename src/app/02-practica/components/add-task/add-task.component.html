@@ -1,0 +1,15 @@
+<h4>Agregar tarea</h4>
+
+ <form class="row" (ngSubmit)="addTask()">
+
+    <input type="text"
+    [(ngModel)]="tareas.nombre"
+    name="name"
+    class="form-control mb-2"
+    placeholder="Nueva Tarea">
+
+    <button  type="submit" class="btn btn-primary" (click)="addTask()" >
+    Agregar
+    </button>
+
+ </form>
