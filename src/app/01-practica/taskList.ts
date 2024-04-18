@@ -3,18 +3,7 @@ import { Task } from './interface/task.model';
 
 export class TaskList{
 
-  public tasks: Task [] = [{
-    id: 1,
-    name:'Realizar tarea 1',
-    completed: false,
-
-  },{
-    id: 2,
-    name:'Realizar tarea 2',
-    completed: false,
-
-
-  }];
+  public tasks!: Task [];
 
 
 
